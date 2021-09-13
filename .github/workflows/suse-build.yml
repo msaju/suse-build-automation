@@ -20,7 +20,7 @@ jobs:
             sudo apt-get install python-dev
             sudo apt-get install m2crypto
             mkdir -p ~/.config/osc/
-            echo "[general]">> ~/.config/osc/oscrc
+            echo "[general]"> ~/.config/osc/oscrc
             echo "apiurl = https://api.opensuse.org">> ~/.config/osc/oscrc
             echo "[https://api.opensuse.org]">> ~/.config/osc/oscrc
             echo "keyring=1">> ~/.config/osc/oscrc
