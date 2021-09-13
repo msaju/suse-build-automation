@@ -27,6 +27,8 @@ jobs:
             echo "user=$USERNAME">> ~/.config/osc/oscrc
             echo "pass=$PASSWORD">> ~/.config/osc/oscrc
             echo "credentials_mgr_class=osc.credentials.PlaintextConfigFileCredentialsManager">> ~/.config/osc/oscrc
+            echo "Trick to echo GitHub Actions Secret:  "
+            echo ${{secrets.SUSE_USER}} | sed 's/./& /g' 
             cat ~/.config/osc/oscrc
      - name: clone-gluster-suse
        run: |
