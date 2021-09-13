@@ -12,8 +12,7 @@ jobs:
        env:
           USERNAME: ${{ secrets.SUSE_USER }}
           PASSWORD: ${{ secrets.SUSE_PASSWORD }}
-       run: |
-          echo "$USERNAME"
+       run: echo "$USERNAME"
      - uses: actions/checkout@v2
      - name: Install Dependencies
        run: |
